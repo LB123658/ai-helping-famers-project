@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Fighting Climate Change</title>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<style>
+* {
+font-family: 'Ubuntu', sans-serif;
+}
+html {
+scroll-behavior: smooth;
+}
+#background {
+position: fixed;
+top: 0px;
+left: 0px;
+min-width: 100%;
+min-height: 100%;
+z-index: -1;
+user-select: none;
+}
+#column {
+position: fixed;
+top: 150px;
+left: 0px;
+width: 140px;
+background: white;
+height: 300px;
+border-radius: 0px 10px 10px 0px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.link {
+width: 100%;
+background: transparent;
+border: none;
+font-size: 20px;
+text-align: center;
+height: 60px;
+cursor: pointer;
+}
+.link:hover {
+background: lightgrey;
+color: #282828;
+}
+.link:focus {
+background: #49c427;
+}
+#top {
+border-radius: 0px 10px 0px 0px;
+}
+#bottom {
+border-radius: 0px 0px 10px 0px;
+}
+#titleDiv {
+position: fixed;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100px;
+background: white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+font-size: 35px;
+text-align: center;
+}
+#text {
+position: absolute;
+top: 150px;
+width: 400px;
+background: rgba(0,0,0,0.5);
+left: 50%;
+margin-left: -200px;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+text-align: justify;
+color: white;
+}
+.header {
+font-size: 23px;
+font-weight: bold;
+}
+@media screen and (max-width: 700px) {
+  #titleDiv {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  #column {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    border-radius: 0px;
+  }
+  .link {
+    width: 19.5%;
+  }
+  #top {
+    border-radius: 0px;
+  }
+  #bottom {
+    border-radius: 0px ;
+  }
+  #text {
+    top: 180px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #column {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    border-radius: 0px;
+    height: 300px;
+  }
+  .link {
+    width: 100%;
+  }
+  #titleDiv {
+    font-size: 5vw;
+  }
+  #text {
+    width: 250px;
+    margin-left: -125px;
+  }
+  #text {
+    top: 420px;
+  }
+}
+</style>
+</head>
+<body>
+<img src="https://lb123658.github.io/ai-helping-famers-project/website/images/background.png" id="background">
+<!-- top buttons -->
+<div id="column">
+<button class="link" id="top">Introduction</button>
+<button class="link">Paragraph 1</button>
+<button class="link">Paragraph 2</button>
+<button class="link">Paragraph 3</button>
+<button class="link" id="bottom">Conclusion</button>
+</div>
+<!-- title of project -->
+<div id="titleDiv">
+<p id="title">How AI is Helping Farmers in East Africa</p>
+</div>
 
+<!-- main text section -->
+<p id="text"><span class="header">Intoduction</span><br> “In 2020, billions of the insects descended on East African countries that had not seen locusts in decades, fueled by unusual weather connected to climate change. Kenya had last dealt with a plague of this scale more than 70 years ago; Ethiopia and Somalia, more than 30 years ago. Nineteen million farmers and herders across these three countries, which bore the brunt of the damage, saw their livelihoods severely affected.”</p>
+</body>
+</html>
