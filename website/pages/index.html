@@ -61,14 +61,15 @@ background: white;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 font-size: 35px;
 text-align: center;
+z-index: 2;
 }
 #text {
 position: absolute;
 top: 150px;
-width: 400px;
+width: 500px;
 background: rgba(0,0,0,0.5);
 left: 50%;
-margin-left: -200px;
+margin-left: -250px;
 padding-left: 20px;
 padding-right: 20px;
 padding-top: 20px;
@@ -79,6 +80,15 @@ color: white;
 .header {
 font-size: 23px;
 font-weight: bold;
+}
+#worksCited {
+word-wrap: break-word;
+}
+@media screen and (max-width: 830px) {
+  #text {
+    width: 400px;
+    margin-left: -200px;
+  }
 }
 @media screen and (max-width: 700px) {
   #titleDiv {
@@ -135,11 +145,16 @@ font-weight: bold;
 <img src="https://lb123658.github.io/ai-helping-famers-project/website/images/background.png" id="background">
 <!-- top buttons -->
 <div id="column">
-<button class="link" id="top">Introduction</button>
-<button class="link">Paragraph 1</button>
-<button class="link">Paragraph 2</button>
-<button class="link">Paragraph 3</button>
-<button class="link" id="bottom">Conclusion</button>
+<a href="#introLink">
+<button class="link" id="top">Introduction</button></a>
+<a href="#paragraphOne">
+<button class="link">Paragraph 1</button></a>
+<a href="#paragraphTwo">
+<button class="link">Paragraph 2</button></a>
+<a href="#paragraphThree">
+<button class="link">Paragraph 3</button></a>
+<a href="#conclusionLink">
+<button class="link" id="bottom">Conclusion</button></a>
 </div>
 <!-- title of project -->
 <div id="titleDiv">
@@ -147,6 +162,23 @@ font-weight: bold;
 </div>
 
 <!-- main text section -->
-<p id="text"><span class="header">Intoduction</span><br> “In 2020, billions of the insects descended on East African countries that had not seen locusts in decades, fueled by unusual weather connected to climate change. Kenya had last dealt with a plague of this scale more than 70 years ago; Ethiopia and Somalia, more than 30 years ago. Nineteen million farmers and herders across these three countries, which bore the brunt of the damage, saw their livelihoods severely affected.”</p>
+<p id="text"><a id="introLink">
+<span class="header">Intoduction</span><br> “In 2020, billions of the insects descended on East African countries that had not seen locusts in decades, fueled by unusual weather connected to climate change. Kenya had last dealt with a plague of this scale more than 70 years ago; Ethiopia and Somalia, more than 30 years ago. Nineteen million farmers and herders across these three countries, which bore the brunt of the damage, saw their livelihoods severely affected.”<br><br><br>
+<a id="paragraphOne">
+<span class="header">Paragraph 1</span><br> “In 2020, billions of the insects descended on East African countries that had not seen locusts in decades, fueled by unusual weather connected to climate change. Kenya had last dealt with a plague of this scale more than 70 years ago; Ethiopia and Somalia, more than 30 years ago. Nineteen million farmers and herders across these three countries, which bore the brunt of the damage, saw their livelihoods severely affected.”<br><br><br>
+<a id="paragraphTwo">
+<span class="header">Paragraph 2</span><br> “In 2020, billions of the insects descended on East African countries that had not seen locusts in decades, fueled by unusual weather connected to climate change. Kenya had last dealt with a plague of this scale more than 70 years ago; Ethiopia and Somalia, more than 30 years ago. Nineteen million farmers and herders across these three countries, which bore the brunt of the damage, saw their livelihoods severely affected.”<br><br><br>
+<a id="paragraphThree">
+<span class="header">Paragraph 3</span><br> “In 2020, billions of the insects descended on East African countries that had not seen locusts in decades, fueled by unusual weather connected to climate change. Kenya had last dealt with a plague of this scale more than 70 years ago; Ethiopia and Somalia, more than 30 years ago. Nineteen million farmers and herders across these three countries, which bore the brunt of the damage, saw their livelihoods severely affected.”<br><br><br>
+<a id="conclusionLink">
+<span class="header">Conclusion</span><br> “In 2020, billions of the insects descended on East African countries that had not seen locusts in decades, fueled by unusual weather connected to climate change. Kenya had last dealt with a plague of this scale more than 70 years ago; Ethiopia and Somalia, more than 30 years ago. Nineteen million farmers and herders across these three countries, which bore the brunt of the damage, saw their livelihoods severely affected.”<br><br><br>
+<span class="header">Works cited</span><br><span id="worksCited">
+Nuwer, Rachel. “As Locusts Swarmed East Africa, This Tech Helped Squash Them”. <i>New York Times</i>, April 4, 2021, https://www.nytimes.com/2021/04/08/science/locust-swarms-africa.html. Accessed April 15, 2021<br><br>
+<i>PlantVillage</i>, https://plantvillage.psu.edu/. Accessed April 15, 2021<br><br>
+Njagi, David. “The Biblical Locust Plagues of 2020”. <i>BBC.</i> August 6, 2020. https://www.bbc.com/future/article/20200806-the-biblical-east-african-locust-plagues-of-2020#:~:text=In%20February%202020%2C%20local%20media,of%20vegetation%20when%20they%20swarmed Accessed May 24, 2021<br><br>
+Beaubien, Jason. “Locust Swarms Threaten Parts of East Africa”. <i>NPR.</i> https://www.npr.org/2021/01/19/958543535/locust-swarms-threaten-parts-of-east-africa Accessed May 24, 2021<br><br>
+Stone, Madeleine. “A plague of locusts has descended on East Africa. Climate change may be to blame.” <i>National Geographic.</i> February 14, 2020. https://www.nationalgeographic.com/science/article/locust-plague-climate-science-east-africa Accessed May 24, 2021<br><br><br>
+</span>
+</p>
 </body>
 </html>
